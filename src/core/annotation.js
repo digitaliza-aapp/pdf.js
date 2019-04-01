@@ -216,13 +216,16 @@ class Annotation {
   _extractText(params) {
     // AP - Appearance Dictionary
     let appearanceDictionary = params.dict.get('AP');
+    // No AP
+    if (typeof appearanceDictionary === 'undefined') {
+      return '';
+    }
+
     // N - Stream
     let normalAppearance = appearanceDictionary.xref.fetch(
       appearanceDictionary._map.N
     );
-
     normalAppearance.getBytes();
-
     // No text
     if (typeof normalAppearance.buffer === 'undefined') {
       return '';
