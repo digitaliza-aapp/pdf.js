@@ -11,7 +11,7 @@ rendering PDFs.
 Modifications in [annotations.js](https://github.com/digitaliza-aapp/pdf.js/blob/master/src/core/annotation.js) marked in code as *FMB* :
 
 - Create `class SidWidgetAnnotation` for extract signature properties (sigDate, SigName, sigReason, sigLocation, sigContactInfo)
-- Extract text from annotation as a property using a data object
+- Extract text from annotation as a property `annotationText`using a data object
 - Show signature (comment in line -> //this.setFlags(AnnotationFlag.HIDDEN); )
 
 ## Contributing
