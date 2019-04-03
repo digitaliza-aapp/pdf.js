@@ -6,6 +6,14 @@ PDF.js is community-driven and supported by Mozilla Labs. Our goal is to
 create a general-purpose, web standards-based platform for parsing and
 rendering PDFs.
 
+## Forked from [mozilla/pdf.js](https://github.com/mozilla/pdf.js)
+
+Modifications in [annotations.js](ion) marked in code as *FMB* :
+
+- Create class SidWidgetAnnotation for extract signature properties (sigDate, SigName, sigReason, sigLocation, sigContactInfo)
+- Extract text from annotation as a property using a data object
+- Show signature (comment in line -> //this.setFlags(AnnotationFlag.HIDDEN); )
+
 ## Contributing
 
 PDF.js is an open source project and always looking for more contributors. To
