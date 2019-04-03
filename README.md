@@ -8,7 +8,7 @@ rendering PDFs.
 
 ## Forked from [mozilla/pdf.js](https://github.com/mozilla/pdf.js)
 
-Modifications in [annotations.js](https://github.com/digitaliza-aapp/pdf.js/blob/master/src/core/annotation.js) marked in code as *FMB* :
+Modifications in [annotations.js](https://github.com/digitaliza-aapp/pdf.js/blob/master/src/core/annotation.js) marked as *FMB* :
 
 - Create `class SidWidgetAnnotation` for extract signature properties (sigDate, SigName, sigReason, sigLocation, sigContactInfo)
 - Extract text from annotation as a property `annotationText`using a data object
